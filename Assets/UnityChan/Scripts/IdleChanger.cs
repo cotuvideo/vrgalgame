@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 namespace UnityChan
@@ -31,6 +31,7 @@ namespace UnityChan
 		{
 			// 各参照の初期化
 			anim = GetComponent<Animator> ();
+			Global.anim = anim;
 			currentState = anim.GetCurrentAnimatorStateInfo (0);
 			previousState = currentState;
 			// ランダム判定用関数をスタートする

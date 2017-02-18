@@ -11,6 +11,7 @@ function Update () {
 function OnPointerEnter()
 {
 	Debug.Log("enter");
+	Global.anim.SetBool ("Next", true);
 }
 
 function OnPointerExit()
